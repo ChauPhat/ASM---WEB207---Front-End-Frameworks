@@ -1,0 +1,70 @@
+/* chỉnh 3 ô size */
+/* Ẩn hình khi ban đầu */
+.img-check {
+    display: none;
+}
+
+/* Hiển thị hình khi checkbox được chọn */
+input[type="radio"]:checked+label .img-check {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Ẩn ô check tròn mặc định của checkbox */
+input[type="radio"] {
+    display: none;
+}
+
+/* Hiển thị khung bao bọc cho size */
+.size-khungchua {
+    position: relative;
+    border: 2px solid #000;
+    cursor: pointer;
+    width: 88.33px;
+    height: 37.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* end chỉnh 3 ô size */
+
+/* bảng hiện khu vực */
+.cac-khu-vuc {
+    display: flex;
+    flex-direction: column;
+}
+
+.khu-vuc-con {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.kvc-diachi {
+    width: 80%; /* Chiếm 80% chiều rộng */
+    margin-left: 5px;
+}
+
+.so-hang {
+    width: 20%; /* Chiếm 20% chiều rộng */
+}
+
+.khu-vuc-con span {
+    font-size: 13px;
+}
+
+.so-hang span {
+    color: red;
+}
+/* end bảng hiện khu vực */
+
+
+
+
+
+
+
+

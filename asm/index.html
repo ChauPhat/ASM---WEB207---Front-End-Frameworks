@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo/Screenshot 2023-09-23 224409.png">
+    <title>PHATTEACHER SHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-loading.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout-dangnhap-dangky.css">
+    <link rel="stylesheet" href="css/danh-muc-san-pham.css">
+    <link rel="stylesheet" href="css/chi-tiet-san-pham.css">
+    <link rel="stylesheet" href="css/gio-hang.css">
+    <link rel="stylesheet" href="css/lien-he.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body ng-app="myapp" ng-controller="appctrl">
+
+    
+<!-- nav -->
+<div class="container-fluid">
+
+    <div class="row">
+
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #f1f1f1;">
+
+            <div class="container-fluid">
+
+                <div>
+                    <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="{{(usernameLogin)?'#!account':'#!login'}}">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu cart-icon-container" href="#!cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-item-count badge rounded-pill" style="background-color: red !important;" id="cartItemCount">0</span>
+                    </a>
+                </div>
+
+                <a class="navbar-brand" href="#!">
+                    <img src="images/logo/logo.webp" alt="logo DirtyCoins | VIETNAMESE STREETWEAR BRAND"
+                        style="width: 174.13px; height: 55.14px;">
+                </a>
+
+                <div>
+                    <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                        Vi
+                    </a>
+                    <a class="text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                        En
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                        <li class="nav-item dropdown nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!products" role="button" aria-expanded="false">
+                                SHOP
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products/tops">TOPS</a></li>
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products/bottoms">BOTTOMS</a></li>
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products/bags">BAGS</a></li>
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products/accessories">ACCESSORIES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!products">BEST SELLER</a>
+                        </li>
+                        <li class="nav-item dropdown nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!products" role="button" aria-expanded="false">
+                                COLLAB'S
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products">B
+                                        RAY</a></li>
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products">GAM
+                                        ESPORTS</a></li>
+                                <li><a class="dropdown-item dropdown-item-custom" href="#!products">ONE
+                                        PIECE</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!products">NEWS</a>
+                        </li>
+                        <li class="nav-item nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!contact">CONTACT</a>
+                        </li>
+                        <li class="nav-item nav-custom">
+                            <a class="nav-link nav-link-custom" href="#!about">ABOUT</a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex search-container me-5" role="search">
+                        <input id="search-input" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search" ng-model="keyword" ng-model-options="{debounce:1000}">
+                        <button id="search-button" class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+
+                    </form>
+
+                </div>
+
+                <a class="me-2 text-dark  d-none d-lg-block ngonNgu" href="{{(usernameLogin)?'#!account':'#!login'}}">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+
+                <a class="me-2 text-dark d-none d-lg-block ngonNgu cart-icon-container" href="#!cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-item-count badge rounded-pill bg-danger"  id="cartItemCount">{{soLuongTrongCart}}</span>
+                </a>
+
+                <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                    Vi
+                </a>
+
+                <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                    En
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</div>
+<!-- end nav -->
+    <!-- <div ng-include="'views/menu.html'"></div> -->
+    
+
+    <div
+        class="loading-screen {{ (loading)?'active':''}} position-fixed top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center text-bg-dark">
+        Loading...
+    </div>
+    <div ng-view>
+        
+    </div>
+    
+
+
+
+    <div ng-include="'views/footer.html'"></div>
+
+
+
+
+
+
+
+    <!-- các file script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38bf75b80a.js" crossorigin="anonymous"></script>
+    <!-- end script -->
+
+
+    <!-- js - controller -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="controllers/app.js"></script>
+    <script src="controllers/homectrl.js"></script>
+    <script src="controllers/aboutctrl.js"></script>
+    <script src="controllers/contactctrl.js"></script>
+    <script src="controllers/loginctrl.js"></script>
+    <script src="controllers/productsctrl.js"></script>
+    <script src="controllers/products-top-ctrl.js"></script>
+    <script src="controllers/products-bottoms-ctrl.js"></script>
+    <script src="controllers/products-bags-ctrl.js"></script>
+    <script src="controllers/products-accessories-ctrl.js"></script>
+    <script src="controllers/detailctrl.js"></script>
+    <script src="controllers/cartctrl.js"></script>
+    <script src="controllers/accountctrl.js"></script>
+    <!-- end js - controller -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<div class="container mt-5">
+
+    a
+
+</div>
+
+<!-- giỏ hàng -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="tieu-de-gio-hang">
+
+            <h3>THÔNG TIN TÀI KHOẢN</h3>
+            <h5>Xin chào, {{usernameLogin}}</h5>
+        </div>
+
+        <div class="col-md-8 col-sm-12">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    Đơn hàng gần nhất
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%; font-size: small;">Đơn hàng #</th>
+                                    <th style="width: 10%; font-size: small;">Ngày</th>
+                                    <th style="width: 20%; font-size: small;">Chuyển đến</th>
+                                    <th style="width: 20%; font-size: small;">Giá trị đơn hàng</th>
+                                    <th style="width: 20%; font-size: small;">Tình trạng thanh toán</th>
+                                </tr>
+                            </thead>
+                            <tbody class="align-middle">
+
+
+                                <tr>
+                                    <td colspan="5">Không có sản phẩm nào</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+
+            <div class="card">
+                <div class="card-header">
+                    Tài khoản của tôi
+                    <b style="float: right;">{{usernameLogin}}</b>
+                </div>
+                <div class="card-body button-account">
+                    <a href="#" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Đổi mật
+                        khẩu</a>
+                    <a href="#" class="btn btn-dark my-2" ng-click="logout()">Thoát</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end giỏ hàng -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Đổi Mật Khẩu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form name="formAccount" ng-submit="checkChangePassword()" novalidate>
+
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                    class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="passwordChange" ng-model="passwordChange"
+                                class="form-control border-start-0 rounded-0" data-bs-toggle="tooltip"
+                                data-bs-title="Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số"
+                                placeholder="Nhập mật khẩu" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                required>
+                        </div>
+                        <div class="text-danger"
+                            ng-show="formAccount.$submitted && formAccount.passwordChange.$invalid">
+                            Vui lòng nhập password và password phải đúng định dạng
+                        </div>
+                        <div class="text-danger" >{{alertPasswordChange}}</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                    class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="confirmpasswordChange" ng-model="confirmpasswordChange"
+                                class="form-control border-start-0 rounded-0" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                        <div class="text-danger"
+                            ng-show="formAccount.$submitted && (formAccount.confirmpasswordChange.$invalid || confirmpasswordChange !== passwordChange)">
+                            Vui lòng nhập lại mật khẩu và phải trùng khớp với mật khẩu đã nhập
+                        </div>
+                    </div>
+
+                    <div class="mb-3 text-end">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

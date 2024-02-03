@@ -1,0 +1,51 @@
+.widget-title {
+    font-size: 18px;
+    /* Tùy chỉnh kích thước tiêu đề theo ý muốn */
+}
+
+.blog-social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-social-icons li {
+    margin-right: 10px;
+    /* Khoảng cách giữa các biểu tượng chia sẻ */
+}
+
+.blog-social-icons a {
+    display: inline-block;
+    width: 30px;
+    /* Kích thước của mỗi biểu tượng chia sẻ */
+    height: 30px;
+    border-radius: 50%;
+    /* Làm tròn góc để biểu tượng trở nên hình tròn */
+    line-height: 30px;
+    /* Canh giữa biểu tượng theo chiều dọc */
+    text-align: center;
+    /* Canh giữa biểu tượng theo chiều ngang */
+    font-size: 14px;
+    /* Tùy chỉnh kích thước chữ trong biểu tượng */
+}
+
+.blog-social-icons li a {
+    color: #000;
+    /* Màu chữ ban đầu (đen) */
+    background-color: #fff;
+    /* Màu nền ban đầu (trắng) */
+    padding: 5px;
+    /* Tùy chỉnh padding theo ý muốn */
+    text-decoration: none;
+    /* Loại bỏ gạch chân mặc định */
+    transition: color 0.3s, background-color 0.3s;
+    /* Thêm hiệu ứng chuyển đổi */
+}
+
+.blog-social-icons li a:hover {
+    color: #fff;
+    /* Màu chữ khi hover (trắng) */
+    background-color: #000;
+    /* Màu nền khi hover (đen) */
+}

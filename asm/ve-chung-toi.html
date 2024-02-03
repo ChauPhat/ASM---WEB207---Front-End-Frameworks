@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo/Screenshot 2023-09-23 224409.png">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout-dangnhap-dangky.css">
+    <link rel="stylesheet" href="css/danh-muc-san-pham.css">
+    <link rel="stylesheet" href="css/chi-tiet-san-pham.css">
+    <link rel="stylesheet" href="css/gio-hang.css">
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #f1f1f1;">
+
+                <div class="container-fluid">
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="dangnhap-dangky.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu cart-icon-container"
+                            href="gio-hang.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-item-count" id="cartItemCount">0</span>
+                        </a>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/logo.webp" alt="logo DirtyCoins | VIETNAMESE STREETWEAR BRAND"
+                            style="width: 174.13px; height: 55.14px;">
+                    </a>
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            Vi
+                        </a>
+                        <a class="text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            En
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BOTTOMS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BAGS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">ACCESSORIES</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    B RAY
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - SPECIAL
+                                            ITEM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - BOTTOM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - ACCESORIES</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    COLLAB'S
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">B
+                                            RAY</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">GAM
+                                            ESPORTS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">ONE
+                                            PIECE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">SALE</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">NEWS</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="lien-he.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="ve-chung-toi.html">ABOUT</a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex search-container me-5" role="search">
+                            <input id="search-input" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button id="search-button" class="btn btn-outline-success" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+
+                    </div>
+
+                    <a class="me-2 text-dark  d-none d-lg-block ngonNgu" href="dangnhap-dangky.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a class="me-2 text-dark d-none d-lg-block ngonNgu cart-icon-container" href="gio-hang.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-item-count" id="cartItemCount">0</span>
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        Vi
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        En
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- end nav -->
+
+    <div class="container mt-5">
+
+        a
+
+    </div>
+
+    <!-- về chúng tôi -->
+    <div class="container mt-5">
+
+        <div class="row">
+
+        <p style="text-align: center;"><img class="img-fluid"
+                src="images/ve-chung-toi/001-ba52ba43-9791-4371-bf38-dfd1c3a80c61.webp"><img class="img-fluid"
+                src="images/ve-chung-toi/002.webp"><br>
+            <br>
+            <span style="font-size:20px;">Con đường chinh phục Streetwear của thương hiệu DirtyCoins được bắt đầu từ
+                2017 tại Sài Gòn - Việt Nam, xuất phát ý tưởng về một thương hiệu Việt mang văn hóa đường phố. Với những
+                kinh nghiệm gói ghém từ thương hiệu tiền thân The Yars Shop, anh Khoa Sen đã đã bắt đầu cuộc hành trình
+                DirtyCoins cùng những người bạn GenZ đầy nhiệt huyết và sáng tạo.</span>
+        </p>
+
+        <p style="text-align: center;"><span style="font-size:20px;">Không quá ồn ào hay phô trương,&nbsp;‘DirtyCoins’
+                tượng trưng cho những giá trị nguyên bản nhất của cuộc sống: đó là hiện thực gai góc của những ‘đồng
+                tiền xương máu’, của giá trị lao động đầy mồ hôi, bụi bẩn và nước mắt. DirtyCoins trở thành một thương
+                hiệu của tinh thần thời trang mạnh mẽ, táo bạo nhưng vẫn gần gũi và dễ tiếp cận rộng rãi. Không dừng lại
+                ở đó, DirtyCoins muốn vượt qua giới hạn của một thương hiệu thời trang đơn thuần và trở thành một biểu
+                tượng về văn hóa và phong cách sống của những con người trẻ tuổi.</span><br>
+            <img src="images/ve-chung-toi/milestones.webp" class="img-fluid"><br>
+            <span style="font-size:20px;">Hãy cùng chúng tôi nhìn lại những dấu ấn trong chặng đường vừa qua.</span><br>
+            &nbsp;
+        </p>
+
+        <p><img class="img-fluid" src="images/ve-chung-toi/2017-11e1e4ab-e63b-4257-b5dc-f8daf8162712.webp"><br>
+            <br>
+            &nbsp;
+        </p>
+
+        <p style="text-align: center;"><span style="font-size:20px;">Thương hiệu&nbsp;DirtyCoins chính thức&nbsp;ra đời,
+                với cửa&nbsp;hàng đầu tiên tại đường Điện Biên Phủ, quận Bình Thạnh, Thành phố Hồ Chí Minh.<br>
+                Cửa hàng thứ 2 tại đường Bắc Hải, quận 10, thành phố Hồ Chí Minh.</span>
+        </p>
+
+        <p style="text-align: center;"><img class="img-fluid" src="images/ve-chung-toi/2018.webp"><br>
+            <span style="font-size:20px;">Cửa hàng thứ 3 tại quận 1,&nbsp;thành phố Hồ Chí Minh.<br>
+                Cửa hàng thứ 4 tại đường phố Huế, quận Hai Bà Trưng, Hà Nội.</span>
+        </p>
+
+        <p style="text-align: center;"><img class="img-fluid" src="images/ve-chung-toi/2019.webp"><br>
+            <span style="font-size:20px;">Cửa hàng thứ 5 tại số 15 Phan Trung, Biên Hoà.<br>
+                Cửa hàng thứ 6 tại 49 Hồ Đắc Di, Hà Nội.<br>
+                Cửa hàng thứ 7 tại Nguyễn Sơn, quận Tân Phú, thành phố Hồ Chí Minh.<br>
+                Cửa hàng thứ 8 tại Khúc Thừa Dụ, quận Cầu Giây, Hà Nội.<br>
+                Cửa hàng thứ 9 tại 52 Mậu Thân, Thành phố Cần Thơ.<br>
+                Cửa hàng thứ 10 tại 41 Quang Trung, Gò Vấp, Thành phố Hồ Chí Minh.<br>
+                Cửa hàng thứ 11 tại Lý Tự Trọng, Quận 1, Thành phố Hồ Chí Minh.<br>
+                Cửa hàng thứ 12 tại Lê Lai, Quận 1, Thành phố Hồ Chí Minh.</span><img class="img-fluid"
+                src="images/ve-chung-toi/2020.webp"><br>
+            <span style="font-size:20px;">Cửa hàng thứ 13 được mở&nbsp;tại Vincom Bà Triệu, quận hai Bà Trưng,&nbsp;Hà
+                Nội.<br>
+                Chúng tôi tự hào được vinh danh&nbsp;Thương hiệu Thời trang Được Yêu thích Nhất tại Lễ trao
+                giải&nbsp;WECHOICE AWARD năm 2020.<br>
+                Là thương hiệu thời trang&nbsp;Việt Nam đầu tiên đạt 1 triệu người theo dõi trên 2 nền tảng mạng xã
+                hội&nbsp;Facebook và Instagram.</span><img class="img-fluid" src="images/ve-chung-toi/2021.webp"><br>
+            <span style="font-size:20px;">Trải qua giai đoạn giãn&nbsp;cách xã hội suốt hơn 4 tháng do đại dịch
+                Covid-19, để duy trì hoạt động ở giai đoạn khó khăn này kèm với nhiều thay đổi và biến chuyển khó lường
+                của thị trường, nên&nbsp;lãnh đạo công ty quyết định rút gọn số lượng cửa hàng còn 8. Giai đoạn cuối
+                2021 cho đến Quý 2 - 2022 là giai đoạn chúng tôi biến chuyển tích cực về mặt cơ cấu sản phẩm và tuyển
+                dụng nhân sự.</span><img class="img-fluid"
+                src="//bizweb.dktcdn.net/100/369/010/files/2022.png?v=1676541015507"><span style="font-size:20px;">Khai
+                trương cửa hàng thứ 9 tại 28 Yersin, Bình Dương.<br>
+                Cửa hàng Flagship tại 561 Sư Vạn Hạnh được đầu tư với một diện mạo hoàn toàn mới.</span><img
+                class="img-fluid" src="images/ve-chung-toi/vision.webp"><span style="font-size:20px;">Với sứ mệnh
+                <strong><span style="color:#2980b9;">“DirtyCoins là nơi thể hiện cái tôi và đóng góp giá trị cho văn hoá
+                        thời trang đường phố”</span></strong> chúng tôi đã nâng tầm thương hiệu dựa trên&nbsp;những giá
+                trị cốt lõi và bền vững nhất, hướng đến đến mục tiêu trở thành <strong>TOP 1 VIETNAMESE STREETWEAR
+                    BRAND</strong>.</span><br>
+            <br>
+            <br>
+            <img class="img-fluid" src="images/ve-chung-toi/vision-1.webp">
+        </p>
+
+        <p style="text-align: center;"><br>
+            <span style="font-size:20px;">Chúng tôi khuyến khích sự sáng tạo không ngừng của từng thành viên trong doanh
+                nghiệp, giải quyết việc làm cho hơn hàng trăm nhân sự mỗi năm với môi trường làm việc năng động, đội ngũ
+                đoàn kết và đầy nhiệt huyết.</span>
+        </p>
+
+        <p style="text-align: center;"><br>
+            <span style="font-size:20px;">Những sản phẩm của DirtyCoins mang đậm dấu ấn kết hợp giữa văn hóa phương Tây
+                và Phương Đông, xác lập một ngôn ngữ sáng tạo rất riêng, đầy mạo hiểm và mới mẻ. Chất liệu cảm hứng được
+                DirtyCoins chắt lọc từ sự đa sắc, đa diện của dòng chảy cuộc sống hàng ngày; pha trộn cùng cảm hứng nghệ
+                thuật đương đại để tạo nên một tiểu vùng văn hóa rất riêng của DirtyCoins.</span><br>
+            <img class="img-fluid"
+                src="images/ve-chung-toi/vision-2.webp">
+        </p>
+
+    </div>
+
+    </div>
+    <!-- end về chúng tôi -->
+
+    <!-- top footer -->
+    <div class="container-fluid mt-5" style="background-color: #f1f1f1;">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+
+                <h5>
+                    <i class="fa-solid fa-phone me-1 py-3"></i>Hỗ trợ / Mua hàng:
+                    <label style="color: red;">0933 800 190</label>
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end top footer -->
+
+    <!-- footer -->
+    <div class="container-fluid" style="border-bottom: 0.5px solid #434343;">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                <h3>Hệ Thống Cửa Hàng</h3>
+
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td style="width: 20px;" class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hồ Chí Minh</b><br>
+                                <b>Quận 1</b> - 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.<br>
+                                <b>Quận 10</b> - 561 Sư Vạn Hạnh, Phường 13.<br>
+
+                                <b>Quận 1</b> - The New Playground 26 Lý Tự Trọng, Phường Bến Nghé.<br>
+
+                                <b>Quận 1</b> - Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ Lão.
+                                <br>
+                                <b>Quận Gò Vấp</b> - 326 Quang Trung, Phường 10.
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top">
+                                <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td><b>Chi Nhánh Biên Hòa:</b><br>
+                                <b>TP. Biên Hòa </b> - 151A Phan Trung, Phường Tân Mai.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Bình Dương:
+                                </b><br>
+                                <b>TP. Thủ Dầu Một</b> - 28 Yersin, Phường Hiệp Thành.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Cần Thơ:
+                                </b><br>
+                                <b>Quận Ninh Kiều</b> - 52 Mậu Thân, Phường An Phú.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hà Nội:</b><br>
+                                <b>Đống Đa</b> - 49-51 Hồ Đắc Di, Phường Nam Đồng.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hưng Yên:</b><br>
+                                <b>Văn Giang</b> - PT.TV 136 - Mega Grand World - Ocean Park
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td><a href="tel:0933800190" class="text-decoration-none"
+                                    style="font-family: sans-serif; color: #434343;">0933 800 190</a> - <a
+                                    href="tel:1900252557" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">1900252557</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td><a href="mailto:csteamdcs@gmail.com" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">csteamdcs@gmail.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Mạng Xã Hội</h3>
+                <a href="#"><i class="fa-brands fa-facebook fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+
+                <h3 class="mt-5">Chính sách</h3>
+                <ul>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Thẻ Thành viên
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Bảo hành &amp; Đổi trả
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách giao hàng hỏa tốc
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Fanpage</h3>
+
+                <div class="cap-effect">
+
+                    <div class="card card-index text-white">
+                        <img src="images/footter/391729113_308134818605965_2475871460713727963_n.jpg"
+                            class="card-img img-fluid rounded-0" alt="...">
+                        <div class="card-img-overlay">
+                            <img src="images/footter/anhdaidien.jpg" class="img-fluid" alt="..."
+                                style="width: 50px; height: 50px;">
+                            <h5 class="card-title">Dirty Coins</h5>
+                            <p class="card-text">1,024,363 followers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end footer -->
+
+    <!-- copy right -->
+    <div class="container mt-5">
+
+        <h6 class="text-center">
+            Copyright © 2023 Dirty Coins Studio. Powered by Sapo
+        </h6>
+
+    </div>
+    <!-- end copy right -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- các file script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38bf75b80a.js" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- end script -->
+</body>
+
+</html>

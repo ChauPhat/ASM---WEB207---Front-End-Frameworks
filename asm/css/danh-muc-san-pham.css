@@ -1,0 +1,79 @@
+/* header */
+.banner {
+    position: relative;
+    display: inline-block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1b1b1b;
+    padding: 7px 20px;
+    color: white;
+    /* Đặt màu chữ phù hợp */
+}
+/* end header */
+
+/* Định dạng select chọn màu */
+select.form-select-mau {
+    background-color: #f8f9fa;
+    color: #000000;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho select */
+select.form-select-mau:hover {
+    border-color: #6c757d; /* Màu border khi hover */
+}
+
+/* Định dạng option trong select chọn màu */
+select.form-select-mau option {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho option */
+select.form-select-mau option:hover {
+    background-color: #e9ecef; /* Màu nền khi hover */
+    color: #000000; /* Màu chữ khi hover */
+}
+/*  */
+
+/* Định dạng select chọn màu */
+select.form-select-sapxep {
+    background-color: #f8f9fa;
+    color: #000000;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho select */
+select.form-select-sapxep:hover {
+    border-color: #6c757d; /* Màu border khi hover */
+}
+
+/* Định dạng option trong select chọn màu */
+select.form-select-sapxep option {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho option */
+select.form-select-sapxep option:hover {
+    background-color: #e9ecef; /* Màu nền khi hover */
+    color: #000000; /* Màu chữ khi hover */
+}
+
+

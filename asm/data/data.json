@@ -1,0 +1,413 @@
+[
+    {
+        "Shop": [
+            {
+                "Id": 1,
+                "Name": "HEART PATCH REGULAR POLO - BLACK",
+                "Price": 420000,
+                "Type": "Tops",
+                "Img": "product1.webp",
+                "ImgPhu": [
+                    "product1_1.webp",
+                    "product1_2.webp",
+                    "product1_3.webp",
+                    "product1_4.webp",
+                    "product1_5.webp",
+                    "product1_6.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 2,
+                "Name": "DICO COMFY BACKPACK V3",
+                "Price": 690000,
+                "Type": "Bags",
+                "Img": "product2.webp",
+                "ImgPhu": [
+                    "product2_1.webp",
+                    "product2_2.webp",
+                    "product2_3.webp",
+                    "product2_4.webp",
+                    "product2_5.webp",
+                    "product2_6.webp",
+                    "product2_7.webp"
+                ]
+            },
+            {
+                "Id": 3,
+                "Name": "DICO WAVY BACKPACK V3",
+                "Price": 690000,
+                "Type": "Bags",
+                "Img": "product3.webp",
+                "ImgPhu": [
+                    "product3_1.webp",
+                    "product3_2.webp",
+                    "product3_3.webp",
+                    "product3_4.webp",
+                    "product3_5.webp",
+                    "product3_6.webp",
+                    "product3_7.webp"
+                ]
+            },
+            {
+                "Id": 4,
+                "Name": "Signature Y Stainless Steel Cup",
+                "Price": 290000,
+                "Type": "Accessories",
+                "Img": "product4.webp",
+                "ImgPhu": [
+                    "product4_1.webp",
+                    "product4_2.webp",
+                    "product4_3.webp",
+                    "product4_4.webp",
+                    "product4_5.webp",
+                    "product4_6.webp",
+                    "product4_7.webp"
+                ]
+            },
+            {
+                "Id": 5,
+                "Name": "More Money More Problems T-shirt - Black",
+                "Price": 390000,
+                "Type": "Tops",
+                "Img": "product5.webp",
+                "ImgPhu": [
+                    "product5_1.webp",
+                    "product5_2.webp",
+                    "product5_3.webp",
+                    "product5_4.webp",
+                    "product5_5.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 6,
+                "Name": "More Money More Problems T-shirt - White",
+                "Price": 390000,
+                "Type": "Tops",
+                "Img": "product6.webp",
+                "ImgPhu": [
+                    "product6_1.webp",
+                    "product6_2.webp",
+                    "product6_3.webp",
+                    "product6_4.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 7,
+                "Name": "Rising Dragon T-shirt - White",
+                "Price": 420000,
+                "Type": "Tops",
+                "Img": "product7.webp",
+                "ImgPhu": [
+                    "product7_1.webp",
+                    "product7_2.webp",
+                    "product7_3.webp",
+                    "product7_4.webp",
+                    "product7_5.webp",
+                    "product7_6.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 8,
+                "Name": "Striped Relaxed Shirt - Blue",
+                "Price": 420000,
+                "Type": "Tops",
+                "Img": "product8.webp",
+                "ImgPhu": [
+                    "product8_1.webp",
+                    "product8_2.webp",
+                    "product8_3.webp",
+                    "product8_4.webp",
+                    "product8_5.webp",
+                    "product8_6.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 9,
+                "Name": "DC X BR LEATHER BIKER JACKET - WHITE",
+                "Price": 1790000,
+                "Type": "Tops",
+                "Img": "product9.webp",
+                "ImgPhu": [
+                    "product9_1.webp",
+                    "product9_2.webp",
+                    "product9_3.webp",
+                    "product9_4.webp",
+                    "product9_5.webp",
+                    "product9_6.webp",
+                    "product9_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 10,
+                "Name": "DC X BR LEATHER BOMBER JACKET - BLACK",
+                "Price": 1390000,
+                "Type": "Tops",
+                "Img": "product10.webp",
+                "ImgPhu": [
+                    "product10_1.webp",
+                    "product10_2.webp",
+                    "product10_3.webp",
+                    "product10_4.webp",
+                    "product10_5.webp",
+                    "product10_6.webp",
+                    "product10_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 11,
+                "Name": "DC X BR DENIM RACING JACKET - RED/BLACK",
+                "Price": 1690000,
+                "Type": "Tops",
+                "Img": "product11.webp",
+                "ImgPhu": [
+                    "product11_1.webp",
+                    "product11_2.webp",
+                    "product11_3.webp",
+                    "product11_4.webp",
+                    "product11_5.webp",
+                    "product11_6.webp",
+                    "product11_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 12,
+                "Name": "DC X BR FELT VARSITY JACKET - GREEN",
+                "Price": 1500000,
+                "Type": "Tops",
+                "Img": "product12.webp",
+                "ImgPhu": [
+                    "product12_1.webp",
+                    "product12_2.webp",
+                    "product12_3.webp",
+                    "product12_4.webp",
+                    "product12_5.webp",
+                    "product12_6.webp",
+                    "product12_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 13,
+                "Name": "DC X BR TWO TONE DENIM HOODIE - BLUE",
+                "Price": 1290000,
+                "Type": "Tops",
+                "Img": "product13.webp",
+                "ImgPhu": [
+                    "product13_1.webp",
+                    "product13_2.webp",
+                    "product13_3.webp",
+                    "product13_4.webp",
+                    "product13_5.webp",
+                    "product13_6.webp",
+                    "product13_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 14,
+                "Name": "DC X BR MATE T-SHIRT - CREAM",
+                "Price": 390000,
+                "Type": "Tops",
+                "Img": "product14.webp",
+                "ImgPhu": [
+                    "product14_1.webp",
+                    "product14_2.webp",
+                    "product14_3.webp",
+                    "product14_4.webp",
+                    "product14_5.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 15,
+                "Name": "DC X BR MATE T-SHIRT - BLACK",
+                "Price": 390000,
+                "Type": "Tops",
+                "Img": "product15.webp",
+                "ImgPhu": [
+                    "product15_1.webp",
+                    "product15_2.webp",
+                    "product15_3.webp",
+                    "product15_4.webp",
+                    "product15_5.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 16,
+                "Name": "DC X BR NEVER YOURS WOMEN T-SHIRT - CREAM",
+                "Price": 390000,
+                "Type": "Tops",
+                "Img": "product16.webp",
+                "ImgPhu": [
+                    "product16_1.webp",
+                    "product16_2.webp",
+                    "product16_3.webp",
+                    "product16_4.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 17,
+                "Name": "DRAGON ALL PRINT SHIRT - CREAM",
+                "Price": 1000000,
+                "Type": "Tops",
+                "Img": "product17.webp",
+                "ImgPhu": [
+                    "product17_1.webp",
+                    "product17_2.webp",
+                    "product17_3.webp",
+                    "product17_4.webp",
+                    "product17_5.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 18,
+                "Name": "LÌ XÌ 2024 - PACK OF 5",
+                "Price": 5000000,
+                "Type": "Accessories",
+                "Img": "product18.webp",
+                "ImgPhu": [
+                    "product18_1.webp",
+                    "product18_2.webp",
+                    "product18_3.webp",
+                    "product18_4.webp",
+                    "product18_5.webp"
+                ]
+            },
+            {
+                "Id": 19,
+                "Name": "LOGO FOOTBALL JERSEY - BLACK",
+                "Price": 450000,
+                "Type": "Tops",
+                "Img": "product19.webp",
+                "ImgPhu": [
+                    "product19_1.webp",
+                    "product19_2.webp",
+                    "product19_3.webp",
+                    "product19_4.webp",
+                    "product19_5.webp",
+                    "product19_6.webp",
+                    "product19_7.webp"
+                ],
+                "Size": [
+                    "M",
+                    "L",
+                    "XL"
+                ]
+            },
+            {
+                "Id": 20,
+                "Name": "LOGO WASHED KNEE JEANS - DARK BLUE",
+                "Price": 850000,
+                "Type": "Bottoms",
+                "Img": "product20.webp",
+                "ImgPhu": [
+                    "product20_1.webp",
+                    "product20_2.webp",
+                    "product20_3.webp",
+                    "product20_4.webp",
+                    "product20_5.webp",
+                    "product20_6.webp",
+                    "product20_7.webp"
+                ],
+                "Size": [
+                    "26",
+                    "28",
+                    "30",
+                    "32",
+                    "34",
+                    "36"
+                ]
+            },
+            {
+                "Id": 21,
+                "Name": "Logo Washed Knee Jeans - Black",
+                "Price": 850000,
+                "Type": "Bottoms",
+                "Img": "product21.webp",
+                "ImgPhu": [
+                    "product21_1.webp",
+                    "product21_2.webp",
+                    "product21_3.webp",
+                    "product21_4.webp",
+                    "product21_5.webp",
+                    "product21_6.webp"
+                ],
+                "Size": [
+                    "26",
+                    "28",
+                    "30",
+                    "32",
+                    "34",
+                    "36"
+                ]
+            }
+        ]
+    }
+]

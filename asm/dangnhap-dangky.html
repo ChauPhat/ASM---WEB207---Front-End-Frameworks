@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo/Screenshot 2023-09-23 224409.png">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout-dangnhap-dangky.css">
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #f1f1f1;">
+
+                <div class="container-fluid">
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="dangnhap-dangky.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu cart-icon-container"
+                            href="gio-hang.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-item-count" id="cartItemCount">0</span>
+                        </a>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/logo.webp" alt="logo DirtyCoins | VIETNAMESE STREETWEAR BRAND"
+                            style="width: 174.13px; height: 55.14px;">
+                    </a>
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            Vi
+                        </a>
+                        <a class="text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            En
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BOTTOMS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BAGS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">ACCESSORIES</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    B RAY
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - SPECIAL
+                                            ITEM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - BOTTOM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - ACCESORIES</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    COLLAB'S
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">B
+                                            RAY</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">GAM
+                                            ESPORTS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">ONE
+                                            PIECE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">SALE</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">NEWS</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="lien-he.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="ve-chung-toi.html">ABOUT</a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex search-container me-5" role="search">
+                            <input id="search-input" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button id="search-button" class="btn btn-outline-success" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+
+                    </div>
+
+                    <a class="me-2 text-dark  d-none d-lg-block ngonNgu" href="dangnhap-dangky.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a class="me-2 text-dark d-none d-lg-block ngonNgu cart-icon-container" href="gio-hang.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-item-count" id="cartItemCount">0</span>
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        Vi
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        En
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- end nav -->
+
+    <div class="container mt-5">
+
+        a
+
+    </div>
+
+
+    <!-- đăng nhập đăng ký -->
+    <div class="container mt-5">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-xs-12">
+
+                <h1 class="titleLogin">ĐĂNG NHẬP</h1>
+
+                <form action="" method="post" class="needs-validation" novalidate>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-control border-start-0 rounded-0" placeholder="Email của bạn"
+                            data-bs-toggle="tooltip" data-bs-title="Email phải có định dạng abc@gmail.com"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <div class="valid-feedback">
+                            Email hợp lệ
+                        </div>
+                        <div class="invalid-feedback">
+                            Vui lòng nhập email hợp lệ
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control border-start-0 rounded-0" placeholder="Nhập mật khẩu"
+                            data-bs-toggle="tooltip"
+                            data-bs-title="Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                        <div class="valid-feedback">
+                            Pass hợp lệ
+                        </div>
+                        <div class="invalid-feedback">
+                            Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+
+                        <button class="btn titleLogin border-black w-100 dangNhap rounded-0" type="submit">Đăng
+                            nhập</button>
+
+                    </div>
+
+                    <div class="mb-3 text-center">
+
+                        <a href="#" class="titleLogin" data-bs-toggle="modal" data-bs-target="#exampleModal">Quên mật
+                            khẩu?</a>
+                        <!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Quên mật khẩu</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                                    class="fa-solid fa-envelope"></i></span>
+                                            <input type="email" class="form-control border-start-0 rounded-0"
+                                                placeholder="Email của bạn" data-bs-toggle="tooltip"
+                                                data-bs-title="Email phải có định dạng abc@gmail.com"
+                                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                                            <div class="valid-feedback">
+                                                Email hợp lệ
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Vui lòng nhập email hợp lệ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button
+                                            class="btn titleLogin border-black w-25 dangNhap rounded-0"
+                                            data-bs-dismiss="modal" type="button">
+                                            Hủy
+                                        </button>
+                                        <button class="btn titleLogin border-black w-25 dangNhap rounded-0"
+                                            type="submit">Gửi</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+
+                <h1 class="titleLogin">ĐĂNG KÝ THÀNH VIÊN MỚI</h1>
+
+                <form action="" method="post" class="needs-validation" novalidate>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-user"></i></i></span>
+                        <input type="text" class="form-control border-start-0 rounded-0" placeholder="Tên" required>
+                        <div class="valid-feedback">
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Vui lòng không để trống tên
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-user"></i></i></span>
+                        <input type="text" class="form-control border-start-0 rounded-0" placeholder="Họ" required>
+                        <div class="valid-feedback">
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Vui lòng không để trống họ
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-control border-start-0 rounded-0" placeholder="Email của bạn"
+                            data-bs-toggle="tooltip" data-bs-title="Email phải có định dạng abc@gmail.com" required
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <div class="valid-feedback">
+                            Email hợp lệ
+                        </div>
+                        <div class="invalid-feedback">
+                            Vui lòng nhập email hợp lệ
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-phone"></i></span>
+                        <input type="number" class="form-control border-start-0 rounded-0" placeholder="Số điện thoại"
+                            data-bs-toggle="tooltip" data-bs-title="Vui lòng nhập sđt hợp lệ, sđt phải có 10 chữ số"
+                            required pattern="^\d{10}$">
+                        <div class="valid-feedback">
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Vui lòng nhập sđt hợp lệ, sđt phải có 10 chữ số
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control border-start-0 rounded-0" placeholder="Nhập mật khẩu"
+                            data-bs-toggle="tooltip"
+                            data-bs-title="Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                        <div class="valid-feedback">
+                            Pass hợp lệ
+                        </div>
+                        <div class="invalid-feedback">
+                            Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+
+                        <button class="btn titleLogin border-black w-100 dangNhap rounded-0" type="submit">Đăng
+                            ký</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end đăng nhập đăng ký -->
+
+    <!-- top footer -->
+    <div class="container-fluid mt-5" style="background-color: #f1f1f1;">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+
+                <h5>
+                    <i class="fa-solid fa-phone me-1 py-3"></i>Hỗ trợ / Mua hàng:
+                    <label style="color: red;">0933 800 190</label>
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end top footer -->
+
+    <!-- footer -->
+    <div class="container-fluid" style="border-bottom: 0.5px solid #434343;">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                <h3>Hệ Thống Cửa Hàng</h3>
+
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td style="width: 20px;" class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hồ Chí Minh</b><br>
+                                <b>Quận 1</b> - 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.<br>
+                                <b>Quận 10</b> - 561 Sư Vạn Hạnh, Phường 13.<br>
+
+                                <b>Quận 1</b> - The New Playground 26 Lý Tự Trọng, Phường Bến Nghé.<br>
+
+                                <b>Quận 1</b> - Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ Lão.
+                                <br>
+                                <b>Quận Gò Vấp</b> - 326 Quang Trung, Phường 10.
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top">
+                                <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td><b>Chi Nhánh Biên Hòa:</b><br>
+                                <b>TP. Biên Hòa </b> - 151A Phan Trung, Phường Tân Mai.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Bình Dương:
+                                </b><br>
+                                <b>TP. Thủ Dầu Một</b> - 28 Yersin, Phường Hiệp Thành.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Cần Thơ:
+                                </b><br>
+                                <b>Quận Ninh Kiều</b> - 52 Mậu Thân, Phường An Phú.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hà Nội:</b><br>
+                                <b>Đống Đa</b> - 49-51 Hồ Đắc Di, Phường Nam Đồng.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hưng Yên:</b><br>
+                                <b>Văn Giang</b> - PT.TV 136 - Mega Grand World - Ocean Park
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td><a href="tel:0933800190" class="text-decoration-none"
+                                    style="font-family: sans-serif; color: #434343;">0933 800 190</a> - <a
+                                    href="tel:1900252557" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">1900252557</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td><a href="mailto:csteamdcs@gmail.com" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">csteamdcs@gmail.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Mạng Xã Hội</h3>
+                <a href="#"><i class="fa-brands fa-facebook fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+
+                <h3 class="mt-5">Chính sách</h3>
+                <ul>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Thẻ Thành viên
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Bảo hành &amp; Đổi trả
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách giao hàng hỏa tốc
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Fanpage</h3>
+
+                <div class="cap-effect">
+
+                    <div class="card card-index text-white">
+                        <img src="images/footter/391729113_308134818605965_2475871460713727963_n.jpg"
+                            class="card-img img-fluid rounded-0" alt="...">
+                        <div class="card-img-overlay">
+                            <img src="images/footter/anhdaidien.jpg" class="img-fluid" alt="..."
+                                style="width: 50px; height: 50px;">
+                            <h5 class="card-title">Dirty Coins</h5>
+                            <p class="card-text">1,024,363 followers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end footer -->
+
+    <!-- copy right -->
+    <div class="container mt-5">
+
+        <h6 class="text-center">
+            Copyright © 2023 Dirty Coins Studio. Powered by Sapo
+        </h6>
+
+    </div>
+    <!-- end copy right -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- các file script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38bf75b80a.js" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- end script -->
+</body>
+
+</html>

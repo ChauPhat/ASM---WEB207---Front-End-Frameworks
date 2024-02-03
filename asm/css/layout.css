@@ -1,0 +1,173 @@
+/* hiệu ứng hình ảnh */
+.cap-effect {
+    overflow: hidden;
+}
+
+.cap-effect img {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.cap-effect:hover img {
+    transform: scale(1.1);
+    /* hoặc bất kỳ giá trị scale mong muốn */
+    opacity: 0.8;
+    /* hoặc bất kỳ giá trị opacity mong muốn */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Màu chữ */
+    font-size: 24px;
+    /* Kích thước chữ */
+    font-weight: bold;
+    /* Độ đậm của chữ */
+}
+
+/* end hiệu ứng hình ảnh */
+
+/* nav */
+.ngonNgu {
+
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+
+.ngonNgu:hover {
+    border-bottom: 1px solid #000000;
+}
+
+
+.nav-custom {
+
+    font-weight: 600;
+    font-family: sans-serif;
+    /* position: relative; */
+
+}
+
+.dropdown-item-custom {
+
+    font-weight: bold;
+    background: rgba(32, 32, 32, 0.85);
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu-custom {
+
+    display: block;
+
+}
+
+.navbar-nav .nav-item .nav-link-custom:hover {
+
+    border-bottom: 1px solid #000000;
+
+}
+
+/* submenu trong suốt */
+.dropdown-menu-custom {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* màu chữ khi hover */
+.dropdown-item-custom:hover {
+    background: rgba(25, 25, 25, 0.85);
+    color: #ffffff;
+}
+
+/* Tùy chỉnh form search */
+.search-container {
+    position: relative;
+    border: 0 solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-input {
+    background-color: #f1f1f1;
+    border: none;
+}
+
+#search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+}
+
+/* Tùy chỉnh form search */
+
+/* con số nằm trong giỏ hàng */
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-item-count {
+    position: absolute;
+    top: -8px; /* Điều chỉnh vị trí đứng trên đỉnh của icon */
+    right: -8px; /* Điều chỉnh vị trí đứng trên đỉnh của icon */
+    /* background-color: red; */
+    /* Màu nền của số */
+    color: white;
+    /* Màu chữ của số */
+    font-size: 12px;
+    /* Kích thước chữ số */
+    padding: 2px 6px;
+    /* Khoảng cách giữa số và viền của hộp chứa */
+    border-radius: 50%;
+    /* Làm tròn góc của hộp chứa */
+}
+
+/* end con số nằm trong giỏ hàng */
+
+/* end nav */
+
+/* card sản phẩm */
+.card-index {
+    position: relative;
+}
+
+.card-index:hover {
+    transform: scale(1.1);
+    filter: brightness(70%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
+.card-index img {
+    transition: filter 0.3s ease;
+}
+
+/* end sản phẩm */
+
+/* cho nút "Xem tất cả" */
+.xemTatCa {
+    display: inline-block;
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.xemTatCa:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* end cho nút "Xem tất cả" */

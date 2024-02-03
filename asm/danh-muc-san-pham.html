@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo/Screenshot 2023-09-23 224409.png">
+    <title>Danh mục sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout-dangnhap-dangky.css">
+    <link rel="stylesheet" href="css/danh-muc-san-pham.css">
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #f1f1f1;">
+
+                <div class="container-fluid">
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="dangnhap-dangky.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu cart-icon-container"
+                            href="gio-hang.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-item-count" id="cartItemCount">0</span>
+                        </a>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/logo.webp" alt="logo DirtyCoins | VIETNAMESE STREETWEAR BRAND"
+                            style="width: 174.13px; height: 55.14px;">
+                    </a>
+
+                    <div>
+                        <a class="me-2 text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            Vi
+                        </a>
+                        <a class="text-dark d-lg-none d-xl-none d-xxl-none ngonNgu" href="#">
+                            En
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BOTTOMS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">BAGS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom"
+                                            href="danh-muc-san-pham.html">ACCESSORIES</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    B RAY
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - SPECIAL
+                                            ITEM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - TOPS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - BOTTOM</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">DC X
+                                            BR - ACCESORIES</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html" role="button"
+                                    aria-expanded="false">
+                                    COLLAB'S
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-custom py-0 border-0">
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">B
+                                            RAY</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">GAM
+                                            ESPORTS</a></li>
+                                    <li><a class="dropdown-item dropdown-item-custom" href="danh-muc-san-pham.html">ONE
+                                            PIECE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">SALE</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="danh-muc-san-pham.html">NEWS</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="lien-he.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item nav-custom">
+                                <a class="nav-link nav-link-custom" href="ve-chung-toi.html">ABOUT</a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex search-container me-5" role="search">
+                            <input id="search-input" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button id="search-button" class="btn btn-outline-success" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+
+                    </div>
+
+                    <a class="me-2 text-dark  d-none d-lg-block ngonNgu" href="dangnhap-dangky.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a class="me-2 text-dark d-none d-lg-block ngonNgu cart-icon-container" href="gio-hang.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-item-count" id="cartItemCount">0</span>
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        Vi
+                    </a>
+
+                    <a class="me-2 text-dark img-fluid d-none d-lg-block ngonNgu" href="#">
+                        En
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- end nav -->
+
+    <div class="container mt-5">
+
+        a
+
+    </div>
+
+    <!-- header -->
+    <div class="container-fluid banner">
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                <img src="images/danh-muc-san-pham/header/denim-bomber-jacket-brown-t-shirt.webp" class="img-fluid"
+                    alt="">
+                <span class="h1" style="background-color: #1b1b1b; padding: 7px 20px 7px 20px;">TOPS</span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end header -->
+
+    <!-- lọc sản phẩm -->
+    <div class="container mt-5" style="border-bottom: 1px solid #1b1b1b;">
+
+        <div class="d-none d-sm-block">
+
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Lọc giá
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="giaDuoi100">
+                                <label for="giaDuoi100">Giá dưới 100.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia100-200">
+                                <label for="gia100-200">100.000đ - 200.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia200-300">
+                                <label for="gia200-300">200.000đ - 300.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia300-500">
+                                <label for="gia300-500">300.000đ - 500.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="giaTren500">
+                                <label for="giaTren500">Giá trên 100.000đ</label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Loại
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="POLOS">
+                                <label for="POLOS">POLOS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="SHIRTS">
+                                <label for="SHIRTS">SHIRTS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="HOODIES">
+                                <label for="HOODIES">HOODIES</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Kích thước
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size S</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size L</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size XL</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Màu sắc
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="Red">
+                                <label for="Red">Red</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Orange">
+                                <label for="Orange">Orange</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Blue">
+                                <label for="Blue">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="White">
+                                <label for="White">White</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <select class="form-select mx-auto my-3" aria-label="Default select example" style="width: 300px;">
+                        <option selected>Sắp xếp</option>
+                        <option value="giaTang">Giá tăng dần</option>
+                        <option value="giaGiam">Giá giảm dần</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="d-block d-sm-none">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Lọc giá
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="giaDuoi100">
+                                <label for="giaDuoi100">Giá dưới 100.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia100-200">
+                                <label for="gia100-200">100.000đ - 200.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia200-300">
+                                <label for="gia200-300">200.000đ - 300.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gia300-500">
+                                <label for="gia300-500">300.000đ - 500.000đ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="giaTren500">
+                                <label for="giaTren500">Giá trên 100.000đ</label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Loại
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="POLOS">
+                                <label for="POLOS">POLOS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="SHIRTS">
+                                <label for="SHIRTS">SHIRTS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="HOODIES">
+                                <label for="HOODIES">HOODIES</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Kích thước
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size S</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size L</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Size S">
+                                <label for="Size S">Size XL</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <div class="dropdown custom-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: #1b1b1b; background-color: white; text-decoration: none;">
+                            Màu sắc
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dmsp">
+                            <li>
+                                <input type="checkbox" id="Red">
+                                <label for="Red">Red</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Orange">
+                                <label for="Orange">Orange</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Blue">
+                                <label for="Blue">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="White">
+                                <label for="White">White</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <select class="form-select my-3" aria-label="Default select example" style="width: 300px;">
+                        <option selected>Sắp xếp</option>
+                        <option value="giaTang">Giá tăng dần</option>
+                        <option value="giaGiam">Giá giảm dần</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end lọc sản phẩm -->
+
+    <!-- 16 sản phẩm -->
+    <div class="container mt-5">
+
+        <div class="row">
+
+            <h1 class="text-center">TOPS</h1>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Heart Patch Regular Polo - Black">
+                        <img class="card-img-top" src="images/product/product1.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Heart Patch Regular Polo - Black">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Heart Patch Regular Polo - Black"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">HEART PATCH REGULAR POLO
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Dico Comfy Backpack V3">
+                        <img class="card-img-top" src="images/product/product2.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Dico Comfy Backpack V3">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Dico Comfy Backpack V3" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">DICO COMFY BACKPACK V3
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">690.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Dico Wavy Backpack V3">
+                        <img class="card-img-top" src="images/product/product3.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Dico Wavy Backpack V3">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Dico Wavy Backpack V3" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">DICO WAVY BACKPACK V3
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">690.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Signature Y Stainless Steel Cup - 500ml">
+                        <img class="card-img-top" src="images/product/product4.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Signature Y Stainless Steel Cup - 500ml">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Signature Y Stainless Steel Cup - 500ml"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Signature Y Stainless Steel Cup - 500ml
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">290.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - Black">
+                        <img class="card-img-top" src="images/product/product5.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-2dda266f-811f-4bc9-a70f-3ca798474008.jpg?v=1703304808427"
+                            alt="More Money More Problems T-shirt - Black">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - Black"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">More Money More Problems T-shirt - Black
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">390.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - White">
+                        <img class="card-img-top" src="images/product/product6.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-c809935a-f049-4710-b85f-90a6f9d7655c.jpg?v=1703305003630"
+                            alt="More Money More Problems T-shirt - White">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - White"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">More Money More Problems T-shirt - White
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">390.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Rising Dragon T-shirt - White">
+                        <img class="card-img-top" src="images/product/product7.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-af59a437-ad15-4576-bcb3-e897c5fbbecf.jpg?v=1703242863530"
+                            alt="Rising Dragon T-shirt - White">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Rising Dragon T-shirt - White"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Rising Dragon T-shirt - White
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Striped Relaxed Shirt - Blue">
+                        <img class="card-img-top" src="images/product/product8.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-62a19a18-b5fc-44ed-975e-7053c7860e85.jpg?v=1702545763263"
+                            alt="Striped Relaxed Shirt - Blue">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Striped Relaxed Shirt - Blue"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Striped Relaxed Shirt - Blue
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Heart Patch Regular Polo - Black">
+                        <img class="card-img-top" src="images/product/product1.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Heart Patch Regular Polo - Black">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Heart Patch Regular Polo - Black"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">HEART PATCH REGULAR POLO
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Dico Comfy Backpack V3">
+                        <img class="card-img-top" src="images/product/product2.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Dico Comfy Backpack V3">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Dico Comfy Backpack V3" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">DICO COMFY BACKPACK V3
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">690.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Dico Wavy Backpack V3">
+                        <img class="card-img-top" src="images/product/product3.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Dico Wavy Backpack V3">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Dico Wavy Backpack V3" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">DICO WAVY BACKPACK V3
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">690.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Signature Y Stainless Steel Cup - 500ml">
+                        <img class="card-img-top" src="images/product/product4.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-d8a1c083-a099-449e-b782-99080499bfaf.jpg?v=1704461832203"
+                            alt="Signature Y Stainless Steel Cup - 500ml">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Signature Y Stainless Steel Cup - 500ml"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Signature Y Stainless Steel Cup - 500ml
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">290.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - Black">
+                        <img class="card-img-top" src="images/product/product5.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-2dda266f-811f-4bc9-a70f-3ca798474008.jpg?v=1703304808427"
+                            alt="More Money More Problems T-shirt - Black">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - Black"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">More Money More Problems T-shirt - Black
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">390.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - White">
+                        <img class="card-img-top" src="images/product/product6.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-c809935a-f049-4710-b85f-90a6f9d7655c.jpg?v=1703305003630"
+                            alt="More Money More Problems T-shirt - White">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="More Money More Problems T-shirt - White"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">More Money More Problems T-shirt - White
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">390.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Rising Dragon T-shirt - White">
+                        <img class="card-img-top" src="images/product/product7.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-af59a437-ad15-4576-bcb3-e897c5fbbecf.jpg?v=1703242863530"
+                            alt="Rising Dragon T-shirt - White">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Rising Dragon T-shirt - White"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Rising Dragon T-shirt - White
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="card card-index border-0">
+                    <a href="chi-tiet-san-pham.html" title="Striped Relaxed Shirt - Blue">
+                        <img class="card-img-top" src="images/product/product8.webp"
+                            data-src="https://bizweb.dktcdn.net/100/369/010/products/1-62a19a18-b5fc-44ed-975e-7053c7860e85.jpg?v=1702545763263"
+                            alt="Striped Relaxed Shirt - Blue">
+                    </a>
+                    <div class="card-body">
+                        <a href="chi-tiet-san-pham.html" title="Striped Relaxed Shirt - Blue"
+                            class="text-decoration-none">
+                            <h6 class="card-title text-center text-black">Striped Relaxed Shirt - Blue
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none">420.000₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end 16 sản phẩm -->
+
+    <!-- thanh dấu trang -->
+    <div class="container mt-5">
+
+        <div class="row">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <!-- thanh dấu trang -->
+
+    <!-- top footer -->
+    <div class="container-fluid mt-5" style="background-color: #f1f1f1;">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+
+                <h5>
+                    <i class="fa-solid fa-phone me-1 py-3"></i>Hỗ trợ / Mua hàng:
+                    <label style="color: red;">0933 800 190</label>
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end top footer -->
+
+    <!-- footer -->
+    <div class="container-fluid" style="border-bottom: 0.5px solid #434343;">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                <h3>Hệ Thống Cửa Hàng</h3>
+
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td style="width: 20px;" class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hồ Chí Minh</b><br>
+                                <b>Quận 1</b> - 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.<br>
+                                <b>Quận 10</b> - 561 Sư Vạn Hạnh, Phường 13.<br>
+
+                                <b>Quận 1</b> - The New Playground 26 Lý Tự Trọng, Phường Bến Nghé.<br>
+
+                                <b>Quận 1</b> - Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ Lão.
+                                <br>
+                                <b>Quận Gò Vấp</b> - 326 Quang Trung, Phường 10.
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top">
+                                <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td><b>Chi Nhánh Biên Hòa:</b><br>
+                                <b>TP. Biên Hòa </b> - 151A Phan Trung, Phường Tân Mai.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Bình Dương:
+                                </b><br>
+                                <b>TP. Thủ Dầu Một</b> - 28 Yersin, Phường Hiệp Thành.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Cần Thơ:
+                                </b><br>
+                                <b>Quận Ninh Kiều</b> - 52 Mậu Thân, Phường An Phú.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hà Nội:</b><br>
+                                <b>Đống Đa</b> - 49-51 Hồ Đắc Di, Phường Nam Đồng.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="align-top"><i class="fa fa-map-marker"></i></td>
+                            <td><b>Chi Nhánh Hưng Yên:</b><br>
+                                <b>Văn Giang</b> - PT.TV 136 - Mega Grand World - Ocean Park
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td><a href="tel:0933800190" class="text-decoration-none"
+                                    style="font-family: sans-serif; color: #434343;">0933 800 190</a> - <a
+                                    href="tel:1900252557" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">1900252557</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td><a href="mailto:csteamdcs@gmail.com" class="text-decoration-none text-dark"
+                                    style="font-family: sans-serif; color: #434343;">csteamdcs@gmail.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Mạng Xã Hội</h3>
+                <a href="#"><i class="fa-brands fa-facebook fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-shake fa-xl me-1" style="color: #434343;"></i></a>
+
+                <h3 class="mt-5">Chính sách</h3>
+                <ul>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Thẻ Thành viên
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách Bảo hành &amp; Đổi trả
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="text-decoration-none"
+                            style="font-family: sans-serif; color: #434343;">
+                            Chính sách giao hàng hỏa tốc
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h3>Fanpage</h3>
+
+                <div class="cap-effect">
+
+                    <div class="card card-index text-white">
+                        <img src="images/footter/391729113_308134818605965_2475871460713727963_n.jpg"
+                            class="card-img img-fluid rounded-0" alt="...">
+                        <div class="card-img-overlay">
+                            <img src="images/footter/anhdaidien.jpg" class="img-fluid" alt="..."
+                                style="width: 50px; height: 50px;">
+                            <h5 class="card-title">Dirty Coins</h5>
+                            <p class="card-text">1,024,363 followers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end footer -->
+
+    <!-- copy right -->
+    <div class="container mt-5">
+
+        <h6 class="text-center">
+            Copyright © 2023 Dirty Coins Studio. Powered by Sapo
+        </h6>
+
+    </div>
+    <!-- end copy right -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- các file script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38bf75b80a.js" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- end script -->
+</body>
+
+</html>

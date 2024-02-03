@@ -1,0 +1,228 @@
+<div class="container mt-5">
+
+    a
+
+</div>
+
+<!-- chi tiết sản phẩm -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-8 col-sm-12">
+            <div class="img-chinh-ctsp">
+                <img ng-src="../images/product/{{selectedImage || sp.Img}}" alt="" class="img-fluid">
+            </div>
+
+            <div class="img-phu-ctsp mt-2 text-center">
+                <img ng-src="../images/product/{{sp.Img}}" ng-click="selectImage(sp.Img)"
+                    class="img-thumbnail {{(selectedImage==sp.Img)?'rounded-circle':''}}" alt=""
+                    style="width: 84.4px; height: 84.4px;">
+                <img ng-src="../images/product/{{imgphu}}" ng-repeat="imgphu in sp.ImgPhu"
+                    ng-click="selectImage(imgphu)"
+                    class="img-thumbnail me-1 {{(selectedImage==imgphu)?'rounded-circle':''}}" alt=""
+                    style="width: 84.4px; height: 84.4px;">
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-12">
+
+            <div class="ten-sp-va-gia-sp text-center">
+
+                <h1 class="ten-sp" style="font-size: 24px; font-family: sans-serif;">{{sp.Name}}</h1>
+
+                <div class="gia-sp">
+                    <span>{{sp.Price | number:0}}₫</span>
+                </div>
+
+            </div>
+
+            <div class="size-sp mt-3" style="display: flex; justify-content: center;">
+
+                <div class="row">
+                    <div class="size mx-3 my-1 col-lg-3 col-md-4 col-sm-6" ng-repeat="size in sp.Size">
+                        <div class="size-khungchua" ng-click="selectSize(size)">
+                            <input id="{{size}}" type="radio" name="option1" value="{{size}}">
+                            <label for="{{size}}">
+                                <span>Size {{size}}</span>
+                                <img class="img-check"
+                                    src="//bizweb.dktcdn.net/100/369/010/themes/914385/assets/select-pro.png?1704953971603"
+                                    alt="Checked">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="them-vao-gio-hang mt-3">
+
+                <button class="btn btn-outline-dark w-100 p-2" ng-click="addToCart(sp)">THÊM VÀO GIỎ</button>
+
+            </div>
+
+            <div class="mua-ngay mt-3">
+
+                <button class="btn btn-dark text-white w-100 p-2">MUA NGAY</button>
+
+            </div>
+
+            <div class="khu-vuc-giao-hang mt-3">
+
+                <h6 class="text-center">Khu vực giao hàng</h6>
+
+                <!-- Button trigger modal -->
+                <p type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Giao hàng tại Hồ Chí Minh - Chọn lại
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Chọn khu vực mua hàng</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-2">
+                                            <button type="button" class="btn btn-dark w-100">Khu vực Hồ Chí
+                                                Minh</button>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
+                                            <button type="button" class="btn btn-dark w-100">Khu vực Hà Nội</button>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
+                                            <button type="button" class="btn btn-dark w-100">Khu vực Tiền
+                                                Giang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="cac-khu-vuc" style="background-color: #f5f5f5;">
+
+                    <div class="khu-vuc-con">
+                        <div class="kvc-diachi">
+                            <span>Quận 10: 561 Sư Vạn Hạnh, Phường 13</span>
+                        </div>
+                        <div class="so-hang">
+                            <span>Hết hàng</span>
+                        </div>
+                    </div>
+
+                    <div class="khu-vuc-con">
+                        <div class="kvc-diachi">
+                            <span>Quận 1: The New Playground 26 Lý Tự Trọng, Phường Bến Nghé</span>
+                        </div>
+                        <div class="so-hang">
+                            <span>Hết hàng</span>
+                        </div>
+                    </div>
+
+                    <div class="khu-vuc-con">
+                        <div class="kvc-diachi">
+                            <span>Quận 1: Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ Lão</span>
+                        </div>
+                        <div class="so-hang">
+                            <span>Hết hàng</span>
+                        </div>
+                    </div>
+
+                    <div class="khu-vuc-con">
+                        <div class="kvc-diachi">
+                            <span>Quận 1: 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh</span>
+                        </div>
+                        <div class="so-hang">
+                            <span>Hết hàng</span>
+                        </div>
+                    </div>
+
+                    <div class="khu-vuc-con">
+                        <div class="kvc-diachi">
+                            <span>Quận Gò Vấp: 326 Quang Trung, Phường 10</span>
+                        </div>
+                        <div class="so-hang">
+                            <span>Hết hàng</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="thuonghieu-ctsp mt-3">
+
+                <p class="text-center">
+                    <img class="img-fluid"
+                        src="images/chi-tiet-san-pham/thuonghieu/logo-dc-x-br-01-35bf2720-0485-41dd-848f-fe83271b92ee.webp">
+                </p>
+
+                <p><strong>Chi tiết sản phẩm:</strong><br>
+                    • <font color="#c0392b"><b>LIMITED EDITION</b></font>.<br>
+                    • Mặt ngoài: Cotton Denim; lót trong: Polyester.<br>
+                    • Relaxed Fit.<br>
+                    • Hình thêu logo DirtyCoins và B Ray trên mặt trước áo.<br>
+                    • Hình thêu mảng lớn sau lưng áo.
+                </p>
+                <p><strong>Size Chart:</strong></p>
+                <p><img class="img-fluid"
+                        src="images/chi-tiet-san-pham/kich-thuoc-ao/sc-dcxbray-denim-racing-jacket.webp">
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end chi tiết sản phẩm -->
+
+<!-- sản phẩm khác -->
+<div class="container-fluid mt-5">
+
+    <div class="tieu-de-san-pham-khac">
+
+        <h1 class="text-center">CÁC SẢN PHẨM KHÁC</h1>
+
+    </div>
+
+    <div class="san-pham-khac">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-2" ng-repeat="sp in dsSP | limitTo:6:0">
+                <div class="card card-index border-0">
+                    <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}">
+                        <img class="card-img-top" ng-src="images/product/{{sp.Img}}" alt="{{sp.Name}}">
+                    </a>
+                    <div class="card-body">
+                        <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black" style="font-size: 8px;">
+                                {{sp.Name}}
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none" style="font-size: 10px;">
+                                {{sp.Price | number:0}}₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end sản phẩm khác -->

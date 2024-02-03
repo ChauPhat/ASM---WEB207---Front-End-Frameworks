@@ -1,0 +1,25 @@
+.titleLogin {
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    /* text-transform: uppercase; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+
+
+.dangNhap {
+    display: inline-block;
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dangNhap:hover {
+    background-color: #000000;
+    color: #ffffff;
+}

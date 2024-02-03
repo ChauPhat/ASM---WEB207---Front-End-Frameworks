@@ -1,0 +1,18 @@
+[
+    {
+        "Id": 1,
+        "FirstName": "Châu Phát",
+        "LastName": "Phùng",
+        "PhoneNumber": "0967135953",
+        "Email": "hieuphung2111@gmail.com",
+        "Pass":"12345678Zz"
+    },
+    {
+        "Id": 2,
+        "FirstName": "Tài",
+        "LastName": "Hồ",
+        "PhoneNumber": "0123456787",
+        "Email": "hothanhtai123@gmail.com",
+        "Pass":"12345678Aa"
+    }
+]

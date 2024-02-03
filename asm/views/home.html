@@ -1,0 +1,197 @@
+<!-- slider -->
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="bg-black"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/slider/slide-img1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/slider/slide-img2.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- end slider -->
+
+<!-- 2 img đầu tiên -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 position-relative cap-effect">
+            <a href="#" title="DC x B Ray">
+                <img src="images/banner/xxx_4.webp" alt="" class="img-fluid">
+                <span class="overlay-text">DC X B RAY</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 position-relative cap-effect">
+            <a href="#" title="DC x B Ray">
+                <img src="images/banner/xxx_5.webp" alt="" class="img-fluid">
+                <span class="overlay-text">DC X B RAY</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+<!-- end 2 img đầu tiên -->
+
+<!-- 8 sản phẩm -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <h1 class="text-center">NEW ARRIVALS</h1>
+
+        <div class="col-xs-6 col-sm-6 col-md-3" ng-repeat="sp in dsSP | limitTo:8:0">
+            <div class="card card-index border-0">
+                <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                    <img class="card-img-top" ng-src="../images/product/{{sp.Img}}" alt="{{sp.Name}}">
+                </a>
+                <div class="card-body">
+                    <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                        <h6 class="card-title text-center text-black">{{sp.Name}}
+
+                        </h6>
+                        <p class="card-text text-center text-black text-decoration-none">{{sp.Price | number:0}}₫</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center mt-5">
+
+            <a href="#!products" class="xemTatCa"
+                style="text-decoration: none; border: 2px solid #000000; padding: 10px 16px 10px 16px;">
+
+                <span style="padding: 0 26px;">Xem tất cả</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end 8 sản phẩm -->
+
+<!-- 2 thẻ img -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 position-relative cap-effect">
+            <a href="#" title="DC x B Ray">
+                <img src="images/banner/xxx_6.webp" alt="" class="img-fluid">
+                <span class="overlay-text">DC X B RAY</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 position-relative cap-effect">
+            <a href="#" title="DC x B Ray">
+                <img src="images/banner/xxx_7.webp" alt="" class="img-fluid">
+                <span class="overlay-text">DC X B RAY</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+<!-- end 2 thẻ img -->
+
+<!-- 8 sản phẩm 2 -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <h1 class="text-center">B RAY</h1>
+
+        <div class="col-xs-6 col-sm-6 col-md-3" ng-repeat="sp in dsSP | limitTo:8:8">
+            <div class="card card-index border-0">
+                <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                    <img class="card-img-top" ng-src="../images/product/{{sp.Img}}" alt="{{sp.Name}}">
+                </a>
+                <div class="card-body">
+                    <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                        <h6 class="card-title text-center text-black">{{sp.Name}}
+
+                        </h6>
+                        <p class="card-text text-center text-black text-decoration-none">{{sp.Price | number:0}}₫</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 text-center mt-5">
+
+            <a href="#!products" class="xemTatCa"
+                style="text-decoration: none; border: 2px solid #000000; padding: 10px 16px 10px 16px;">
+
+                <span style="padding: 0 26px;">Xem tất cả</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end 8 sản phẩm 2 -->
+
+<!-- thương hiệu -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-xs-6 col-sm-6 col-md-3">
+
+            <img class="img-fluid" src="images/thuonghieu/brand1.webp" alt="ORIGINAL LOGO" title="ORIGINAL LOGO ">
+
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3">
+
+            <img class="img-fluid" src="images/thuonghieu/brand4.webp" alt="SIGNATURE Y" title="SIGNATURE Y ">
+
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3">
+
+            <img class="img-fluid" src="images/thuonghieu/brand6.webp" alt="DICO COMFY LOGO" title="DICO COMFY LOGO ">
+
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-3">
+
+            <img class="img-fluid" src="images/thuonghieu/brand7.webp" alt="DICO STAR LOGO" title="DICO STAR LOGO ">
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end thương hiệu -->

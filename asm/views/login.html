@@ -1,0 +1,232 @@
+<div class="container mt-5">
+
+    a
+
+</div>
+
+
+<!-- đăng nhập đăng ký -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-sm-6 col-xs-12">
+
+            <h1 class="titleLogin">ĐĂNG NHẬP</h1>
+
+            <form name="formDangNhap" ng-submit="checkLogin()" novalidate>
+
+                <div class="mb-3" ng-show="formDangNhap.$valid">
+
+                    <p class="text-{{(alertLogin=='Đăng nhập thành công!')?'success':'danger'}}">{{alertLogin}}</p>
+
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <input type="text" name="emailLogin" ng-model="email"
+                            class="form-control border-start-0 rounded-0" data-bs-toggle="tooltip"
+                            data-bs-title="Email phải có định dạng abc@gmail.com" placeholder="Email của bạn"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangNhap.$submitted && formDangNhap.emailLogin.$invalid">
+                        Vui lòng nhập email và email phải đúng định dạng
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="passwordLogin" ng-model="password"
+                            class="form-control border-start-0 rounded-0" data-bs-toggle="tooltip"
+                            data-bs-title="Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số"
+                            placeholder="Nhập mật khẩu" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                            required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangNhap.$submitted && formDangNhap.passwordLogin.$invalid">
+                        Vui lòng nhập password và password phải đúng định dạng
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <button class="btn titleLogin border-black w-100 dangNhap rounded-0" type="submit">Đăng
+                        nhập</button>
+
+                </div>
+
+                <div class="mb-3 text-center">
+
+                    <a href="#" class="titleLogin" data-bs-toggle="modal" data-bs-target="#exampleModal">Quên mật
+                        khẩu?</a>
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Quên mật khẩu</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                                class="fa-solid fa-envelope"></i></span>
+                                        <input type="email" class="form-control border-start-0 rounded-0"
+                                            placeholder="Email của bạn" data-bs-toggle="tooltip"
+                                            data-bs-title="Email phải có định dạng abc@gmail.com"
+                                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                                        <div class="valid-feedback">
+                                            Email hợp lệ
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập email hợp lệ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button class="btn titleLogin border-black w-25 dangNhap rounded-0"
+                                        data-bs-dismiss="modal" type="button">
+                                        Hủy
+                                    </button>
+                                    <button class="btn titleLogin border-black w-25 dangNhap rounded-0"
+                                        type="button">Gửi</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+
+            <h1 class="titleLogin">ĐĂNG KÝ THÀNH VIÊN MỚI</h1>
+
+            <form name="formDangKy" ng-submit="checkRegister()" novalidate>
+
+                <div class="mb-3" ng-show="formDangKy.$valid">
+
+                    <p class="text-success">{{alertRegis}}</p>
+
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-user"></i></i></span>
+                        <input type="text" name="firstNameRegis" ng-model="firstNameRegis"
+                            class="form-control border-start-0 rounded-0" placeholder="Tên" required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangKy.$submitted && formDangKy.firstNameRegis.$invalid">
+                        Vui lòng nhập tên
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-user"></i></i></span>
+                        <input type="text" name="lastNameRegis" ng-model="lastNameRegis"
+                            class="form-control border-start-0 rounded-0" placeholder="Họ" required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangKy.$submitted && formDangKy.lastNameRegis.$invalid">
+                        Vui lòng nhập họ
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <input type="text" name="emailRegis" ng-model="emailRegis"
+                            class="form-control border-start-0 rounded-0" data-bs-toggle="tooltip"
+                            data-bs-title="Email phải có định dạng abc@gmail.com" placeholder="Email của bạn"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangKy.$submitted && formDangKy.emailRegis.$invalid">
+                        Vui lòng nhập email và email phải đúng định dạng
+                    </div>
+                    <div class="mb-3">
+
+                        <p class="text-danger">{{alertEmailRegis}}</p>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-phone"></i></span>
+                        <input type="text" name="phoneRegis" ng-model="phoneRegis"
+                            class="form-control border-start-0 rounded-0" placeholder="Số điện thoại"
+                            data-bs-toggle="tooltip" data-bs-title="Vui lòng nhập sđt hợp lệ, sđt phải có 10 chữ số"
+                            required pattern="^\d{10}$">
+                    </div>
+                    <div class="text-danger" ng-show="formDangKy.$submitted && formDangKy.phoneRegis.$invalid">
+                        Vui lòng nhập sđt và sđt phải đúng định dạng
+                    </div>
+                    <div class="mb-3">
+
+                        <p class="text-danger">{{alertPhoneRegis}}</p>
+
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="passwordRegis" ng-model="passwordRegis"
+                            class="form-control border-start-0 rounded-0" data-bs-toggle="tooltip"
+                            data-bs-title="Mật khẩu phải bao gồm ít nhất 8 kí tự: chữ thường, chữ hoa, số"
+                            placeholder="Nhập mật khẩu" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                            required>
+                    </div>
+                    <div class="text-danger" ng-show="formDangKy.$submitted && formDangKy.passwordRegis.$invalid">
+                        Vui lòng nhập password và password phải đúng định dạng
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 rounded-0 bg-white"><i
+                                class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="confirmPasswordRegis" ng-model="confirmPasswordRegis"
+                            class="form-control border-start-0 rounded-0" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+                    <div class="text-danger"
+                        ng-show="formDangKy.$submitted && (formDangKy.confirmPasswordRegis.$invalid || confirmPasswordRegis !== passwordRegis)">
+                        Vui lòng nhập lại mật khẩu và phải trùng khớp với mật khẩu đã nhập
+                    </div>
+                </div>
+
+                <div class="mb-3">
+
+                    <button class="btn titleLogin border-black w-100 dangNhap rounded-0" type="submit">Đăng
+                        ký</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end đăng nhập đăng ký -->

@@ -1,0 +1,109 @@
+<!-- header -->
+<div class="container-fluid banner px-0">
+
+
+
+    <img src="../images/danh-muc-san-pham/header/bottom.webp" class="img-fluid" alt="">
+    <span class="h1" style="background-color: #1b1b1b; padding: 7px 20px 7px 20px;">BOTTOMS</span>
+
+
+
+</div>
+<!-- end header -->
+
+<!-- lọc sản phẩm -->
+<div class="container mt-5" style="border-bottom: 1px solid #1b1b1b;">
+
+    <div class="row text-center">
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+
+            <select class="form-select form-select-mau mx-auto my-3 w-50" ng-model="mau" aria-label="Default select example">
+                <option value="" selected>Lọc theo màu</option>
+                <option value="black">Màu đen</option>
+                <option value="white">Màu trắng</option>
+                <option value="blue">Màu xanh</option>
+            </select>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+
+            <select class="form-select form-select-sapxep mx-auto my-3 w-50" ng-model="sapxep" ng-change="thayDoiSapXep()"
+                aria-label="Default select example">
+                <option value="" selected>Sắp xếp giá tăng dần hoặc giảm dần</option>
+                <option value="tangDan">Giá tăng dần</option>
+                <option value="giamDan">Giá giảm dần</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+<!-- end lọc sản phẩm -->
+
+<!-- 16 sản phẩm -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <h1 class="text-center text-uppercase">BOTTOMS</h1>
+
+        <!-- <input type="text" ng-model="keyword"> -->
+        <div ng-show="dsSPBOTTOMSHienThi.length < 1" class="alert alert-warning">Không tìm thấy sản phẩm</div>
+        <div class="col-xs-6 col-sm-6 col-md-3"
+            ng-repeat="sp in dsSPBOTTOMSHienThi | limitTo:limit:start">
+            
+            <div class="card card-index border-0">
+                <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                    <img class="card-img-top" ng-src="../images/product/{{sp.Img}}" alt="{{sp.Name}}">
+                </a>
+                <div class="card-body">
+                    <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                        <h6 class="card-title text-center text-black text-uppercase">{{sp.Name}}
+
+                        </h6>
+                        <p class="card-text text-center text-black text-decoration-none">{{sp.Price | number:0}}₫</p>
+                    </a>
+                    <!-- <button class="btn btn-outline-dark w-100 p-2" ng-click="addToCart(sp)">THÊM VÀO GIỎ</button> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- end 16 sản phẩm -->
+
+<!-- thanh dấu trang -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link text-dark" aria-label="Previous" ng-click="luiTrang()">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item {{(trang==page)?'active':''}}"
+                    ng-repeat="trang in danhSachTrang | limitTo:5:((page-3<0)?0:page-3)">
+                    <a class="page-link {{(trang==page)?'text-light':'text-dark'}}"
+                        ng-click="chonTrang(trang)">{{trang}}</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-dark" aria-label="Next" ng-click="tangTrang()">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+</div>
+<!-- thanh dấu trang -->

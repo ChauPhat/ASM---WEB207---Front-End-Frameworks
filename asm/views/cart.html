@@ -1,0 +1,153 @@
+<div class="container mt-5">
+
+    a
+
+</div>
+
+<!-- giỏ hàng -->
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="tieu-de-gio-hang">
+
+            <h3>GIỎ HÀNG</h3>
+
+        </div>
+
+        <div class="col-md-8 col-sm-12">
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Sản phẩm</th>
+                            <th style="width: 19.9%;">Số lượng</th>
+                            <th style="width: 30%;">Giá</th>
+                            <th style="width: 0.1%;">Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr ng-show="cart.length < 1">
+                            <td colspan="4">
+                                <div class="alert alert-warning">Không tìm thấy sản phẩm</div>
+                            </td>
+                        </tr>
+                        <tr ng-repeat="sp in cart">
+
+                            <td>
+
+                                <div class="card border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img ng-src="images/product/{{sp.Img}}" class="img-fluid rounded-start"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">{{sp.Name}}</h5>
+                                                <p class="card-text" ng-if="sp.selectedSize">Size {{sp.selectedSize}}
+                                                </p>
+                                                <p class="card-text">{{sp.Price | number:0}}₫</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="qty-number d-flex align-items-center border">
+                                    <button type="button" class="btn w-25 px-0 border-end rounded-0">
+                                        <i class="fa-solid fa-minus" ng-click="decreaseQuantity(sp)"></i>
+                                    </button>
+                                    <input type="number" ng-model="sp.quantity"
+                                        class="form-control w-50 px-0 border-0 text-center" min="1"
+                                        style="background-color: white !important;" disabled>
+                                    <button type="button" class="btn w-25 px-0 border-start rounded-0">
+                                        <i class="fa-solid fa-plus" ng-click="increaseQuantity(sp)"></i>
+                                    </button>
+                                </div>
+
+                            </td>
+
+                            <td><b>{{sp.quantity * sp.Price | number:0}}₫</b></td>
+
+                            <td>
+                                <a title="Xóa" class="text-decoration-none text-dark"
+                                    ng-click="xoa(sp.Id, sp.selectedSize)">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tiep-tuc-mua-hang mb-1">
+
+                <a href="#!products" class="btn btn-dark">TIẾP TỤC MUA HÀNG</a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+
+            <div class="card">
+                <div class="card-header">
+                    Tổng tiền
+                    <b style="float: right;">{{tongTien() | number:0}}₫</b>
+                </div>
+                <div class="card-body thanh-toan">
+                    <a href="#" class="btn btn-dark">THANH TOÁN</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end giỏ hàng -->
+
+<!-- sản phẩm khác -->
+<div class="container-fluid mt-5">
+
+    <div class="tieu-de-san-pham-khac">
+
+        <h1 class="text-center">CÁC SẢN PHẨM KHÁC</h1>
+
+    </div>
+
+    <div class="san-pham-khac">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-2" ng-repeat="sp in dsSP | limitTo:6:0">
+                <div class="card card-index border-0">
+                    <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}">
+                        <img class="card-img-top" ng-src="images/product/{{sp.Img}}" alt="{{sp.Name}}">
+                    </a>
+                    <div class="card-body">
+                        <a href="#!detail/{{sp.Id}}" title="{{sp.Name}}" class="text-decoration-none">
+                            <h6 class="card-title text-center text-black" style="font-size: 8px;">
+                                {{sp.Name}}
+                            </h6>
+                            <p class="card-text text-center text-black text-decoration-none" style="font-size: 10px;">
+                                {{sp.Price | number:0}}₫</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end sản phẩm khác -->
